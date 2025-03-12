@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- FontAwesome for icons (optional) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" class="nav1">
+    <div class="container">
+      <!-- Logo on the left -->
+      <a class="navbar-brand" href="#"><b>Office.Com</b></a>
+      
+      <!-- Navbar toggler for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links and dropdown -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- Home Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b><i>Home</i></b></a>
+          </li>
+          <!-- About Us Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b><i>About Us</i></b></a>
+          </li>
+          <!-- Our Services Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <b><i>Our Services</i></b>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">  <b><i>App Development</i></b></a></li>
+              <li><a class="dropdown-item" href="#">  <b><i>Web Development</i></b></a></li>
+              <li><a class="dropdown-item" href="#">  <b><i>Digital Marketing</i></b></a></li>
+              <li><a class="dropdown-item" href="#">  <b><i>Call Center</i></b></a></li>
+              <li><a class="dropdown-item" href="#">  <b><i>Designing</i></b></a></li>
+              <li><a class="dropdown-item" href="#">  <b><i>Team Work</i></b></a></li>
+            </ul>
+          </li>
+          <!-- Our Projects Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">  <b><i>Our Projects</i></b></a>
+          </li>
+          <!-- Contact Us Link -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">  <b><i>Contact Us</i></b></a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Get Started Button on the right -->
+      <button class="btn btn-primary my-2 my-sm-0" type="button">Get Started</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section Slider (Carousel) -->
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active" style="background-image: url('img/w1.jpg');">
+        <div class="carousel-caption">
+          <h1>Welcome to Our Service</h1>
+          <p>"Welcome to our comprehensive suite of services, designed to cater to your specific needs with excellence and dedication.
+             We pride ourselves on providing top-notch solutions, backed by our expertise and commitment to exceeding your expectations.
+             Explore our range of offerings and discover how we can seamlessly assist you in achieving your goals."</p>
+          <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item" style="background-image: url('img/w111.jpg');">
+        <div class="carousel-caption">
+          <h1>Explore Our Portfolio</h1>
+          <p>he introduction to your portfolio is a great way to tell your readers who you are and briefly explain what you'll be talking about.
+             If you're using your portfolio to attract customers,.</p>
+          <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item" style="background-image: url('img/w22.jpeg');">
+        <div class="carousel-caption">
+          <h1>Join Our Community</h1>
+          <p>"Become a part of our vibrant community where you can connect with like-minded individuals, 
+            share your ideas, and collaborate on projects that matter. .</p>
+          <p>Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Left and Right controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+</div>
+  <!-- About Us Section -->
+  <div class="container about-section">
+    <div class="row align-items-center">
+      <!-- Left side: Heading, Tabs, Content -->
+      <div class="col-md-6">
+        <h2 class="mb-4">About Us</h2>
+        
+        <!-- Tabs -->
+        <ul class="nav nav-pills about-tabs" id="aboutTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="company-tab" data-bs-toggle="pill" href="#company" role="tab" aria-controls="company" aria-selected="true">Our Company</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="mission-tab" data-bs-toggle="pill" href="#mission" role="tab" aria-controls="mission" aria-selected="false">Our Mission</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="vision-tab" data-bs-toggle="pill" href="#vision" role="tab" aria-controls="vision" aria-selected="false">Our Vision</a>
+          </li>
+        </ul>
+
+        <!-- Tab Contents -->
+        <div class="tab-content" id="aboutTabContent">
+          <!-- Our Company Tab -->
+          <div class="tab-pane fade show active" id="company" role="tabpanel" aria-labelledby="company-tab">
+            <div class="about-content">
+              <h4>Our Company</h4>
+              <p>Office.com is a dynamic and innovative company dedicated to providing comprehensive digital solutions
+                 for businesses and individuals alike. Known for its user-friendly platform, Office.com offers a suite of productivity tools,
+                  including word processing, spreadsheets, presentations, and cloud storage, all designed to streamline workflows and enhance collaboration. With a strong focus on efficiency and innovation, Office.com continues to empower its users to work smarter, fostering growth and success across a wide range of industries. Whether you're working from home or in the office,
+                 Office.com is your go-to platform for seamless and effective digital solutions..</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+          <!-- Our Mission Tab -->
+          <div class="tab-pane fade" id="mission" role="tabpanel" aria-labelledby="mission-tab">
+            <div class="about-content">
+              <h4>Our Mission</h4>
+              <p>At Office.com, our mission is to empower individuals and organizations with innovative, accessible,
+                 and efficient digital tools that enhance productivity and collaboration. We are committed to providing a
+                  seamless experience through our suite of applications, helping users stay organized, connected,
+                   and efficient in their daily tasks. By prioritizing simplicity, security, and innovation,
+                    our goal is to support businesses of all sizes in achieving their full potential while fostering a 
+                    collaborative environment where ideas can thrive. At Office.com, we are dedicated to shaping the future of work, making it smarter, 
+                easier, and more productive for everyone..</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+          <!-- Our Vision Tab -->
+          <div class="tab-pane fade" id="vision" role="tabpanel" aria-labelledby="vision-tab">
+            <div class="about-content">
+              <h4>Our Vision</h4>
+              <p>At Office.com, our vision is to be the leading platform that transforms how people work,
+                 connect, and create in an increasingly digital world. We strive to build a future where businesses,
+                  teams, and individuals can seamlessly collaborate, innovate, and achieve their goals with ease and efficiency.
+                   Through continuous innovation and a commitment to user-centric design, we aim to empower every user, 
+                   regardless of size or industry, to unlock their full potential. Our vision is to create a 
+                   world where productivity and creativity are limitless, and where Office.com is 
+                   at the heart of the digital transformation journey.
+
+
+
+                .</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Image -->
+      <div class="col-md-6 about-image">
+        <img src="img/w4.jpg" alt="About Us Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Services Section -->
+  <div class="container py-5">
+    <div class="text-center mb-5">
+      <h2>Our Services</h2>
+      <p><b>We offer a range of professional services to help your business grow. From strategy to execution, we deliver results that matter.</b></p>
+    </div>
+
+    <div class="row">
+      <!-- Service Box 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <i class="fa-brands fa-figma"></i>
+          <h4>Designing</h4>
+          <p>Creating visually stunning designs in Figma that seamlessly transition 
+             blending functionality with creativity."</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service Box 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <i class="fas fa-laptop"></i>
+          <h4>Web Development</h4>
+          <p>Web development is the process of creating, maintaining, and building websites and web applications. </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service Box 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <i class="fas fa-users"></i>
+          <h4>Team Work</h4>
+          <p>"Teamwork transforms individual strengths into collective success, where collaboration drives innovation and achievement."</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Service Box 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <i class="fa-brands fa-adn"></i>
+          <h4>APP Development</h4>
+          <p>"App development blends creativity and technology to create seamless, user-centered experiences that solve real-world problems."</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service Box 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <i class="fa-solid fa-tachograph-digital"></i>
+          <h4>Digital Marketing</h4>
+          <p>"Digital marketing leverages innovative strategies and data-driven insights to connect brands with their audience,
+             driving growth and engagement."</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Service Box 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="service-box">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Call Center</h4>
+          <p>" provides efficient, customer-focused support,
+             ensuring seamless communication and satisfaction for clients and businesses alike."</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Our Projects Section -->
+ <div class="container our-projects">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2>Our Projects</h2>
+      <p><b>Explore some of the projects we have worked on. We offer a wide variety of creative services.</b></p>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-pills mb-4" id="projectTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="app-tab" data-bs-toggle="pill" href="#app" role="tab" aria-controls="app" aria-selected="true">All</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="branding-tab" data-bs-toggle="pill" href="#branding" role="tab" aria-controls="branding" aria-selected="false">Product Branding</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="book-tab" data-bs-toggle="pill" href="#book" role="tab" aria-controls="book" aria-selected="false">Book</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" id="work-tab" data-bs-toggle="pill" href="#work" role="tab" aria-controls="work" aria-selected="false">Our Work Projects</a>
+      </li>
+    </ul>
+
+    <!-- Tab Contents -->
+    <div class="tab-content" id="projectTabsContent">
+
+      <!-- App Tab -->
+      <div class="tab-pane fade show active" id="app" role="tabpanel" aria-labelledby="app-tab">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="position-relative">
+              <img src="img/o1.jpg" class="project-img" alt="App 1">
+             
+             
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>App Project 1</h4>
+                  <p>App development for businesses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-up">
+            <div class="position-relative">
+              <img src="img/o2.jpg" class="project-img" alt="App 2">
+             
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>App Project 2</h4>
+                  <p>Building high-performance apps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-down">
+            <div class="position-relative">
+              <img src="img/02.jpg" class="project-img" alt="App 3">
+             
+              <div class="project-overlay">
+                
+                <div class="project-text">
+                  <h4>App Project 3</h4>
+                  <p>Innovative app solutions for businesses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+      <!-- App Tab -->
+      <div class="tab-pane fade show active" id="app" role="tabpanel" aria-labelledby="app-tab">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="position-relative">
+              <img src="img/o3.webp" class="project-img" alt="App 1">
+             
+             
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>App Project 1</h4>
+                  <p>App development for businesses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-up">
+            <div class="position-relative">
+              <img src="img/o4.png" class="project-img" alt="App 2">
+             
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>App Project 2</h4>
+                  <p>Building high-performance apps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-down">
+            <div class="position-relative">
+              <img src="img/o5.png" class="project-img" alt="App 3">
+             
+              <div class="project-overlay">
+                
+                <div class="project-text">
+                  <h4>App Project 3</h4>
+                  <p>Innovative app solutions for businesses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Product Branding Tab -->
+      <div class="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="branding-tab">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="position-relative">
+              <img src="img/o6.jpeg" class="project-img" alt="Branding 1">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Branding Project 1</h4>
+                  <p>Creative branding solutions for startups.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-up">
+            <div class="position-relative">
+              <img src="img/09.png" class="project-img" alt="Branding 2">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Branding Project 2</h4>
+                  <p>Building a strong brand identity.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-down">
+            <div class="position-relative">
+              <img src="img/o8.webp" class="project-img" alt="Branding 3">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Branding Project 3</h4>
+                  <p>Creating a memorable brand experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+                
+      <!-- Book Tab -->
+      <div class="tab-pane fade" id="book" role="tabpanel" aria-labelledby="book-tab">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="position-relative">
+              <img src="img/o6.jpeg" class="project-img" alt="Book 1">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Book Project 1</h4>
+                  <p>Creative book cover designs for authors.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-up">
+            <div class="position-relative">
+              <img src="img/o3.webp" class="project-img" alt="Book 2">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Book Project 2</h4>
+                  <p>Transforming ideas into visual masterpieces.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-down">
+            <div class="position-relative">
+              <img src="img/09.png" class="project-img" alt="Book 3">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Book Project 3</h4>
+                  <p>Designing unique covers for publishing houses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Work Projects Tab -->
+      <div class="tab-pane fade" id="work" role="tabpanel" aria-labelledby="work-tab">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="position-relative">
+              <img src="img/o1.jpg" class="project-img" alt="Work 1">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Work Project 1</h4>
+                  <p>We work with top-tier clients to deliver exceptional results.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-up">
+            <div class="position-relative">
+              <img src="img/o2.jpg" class="project-img" alt="Work 2">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Work Project 2</h4>
+                  <p>Creative solutions for innovative businesses.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 image-down">
+            <div class="position-relative">
+              <img src="img/o8.webp" class="project-img" alt="Work 3">
+              <div class="project-overlay">
+                <div class="project-text">
+                  <h4>Work Project 3</h4>
+                  <p>Designing and developing impactful projects.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+   <!-- Contact Section -->
+   <div class="container contact-section">
+    <div class="row">
+      <!-- Contact Form Column -->
+      <div class="col-lg-6">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" placeholder="Your message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Map Column (Content Query Section) -->
+      <div class="col-lg-6">
+        <h2>Our Location</h2>
+        <!-- You can replace this with your actual map code or a static image -->
+        <div class="map-section">
+          <!-- Example of an embedded Google Map -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.060102070469!2d-122.08385168469372!3d37.38605177983421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb66b11c971a9%3A0xc46ed6b35042f5e8!2sGoogleplex!5e0!3m2!1sen!2sus!4v1617900436461!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Column 1: About -->
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>We are a passionate team dedicated to delivering exceptional services and solutions. Our goal is to help businesses grow and succeed through creative and innovative ideas.</p>
+        </div>
+  
+        <!-- Footer Column 2: Contact Information -->
+        <div class="col-md-4">
+          <h5>Contact Information</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</li>
+            <li><i class="fas fa-phone-alt"></i> +123 456 7890</li>
+            <li><i class="fas fa-envelope"></i> contact@yourwebsite.com</li>
+          </ul>
+        </div>
+  
+        <!-- Footer Column 3: Social Media Links -->
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div>
+            <a href="https://facebook.com" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12 text-center">
+          <p>&copy; 2025 YourWebsite. All Rights Reserved.</p>
+          <p>syed saad</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Bootstrap JS and dependencies -->
+   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

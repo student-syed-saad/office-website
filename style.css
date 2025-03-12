@@ -1,0 +1,234 @@
+@media (max-width: 768px) {
+    .contact-form, .map-section {
+      margin-top: 30px;
+    }
+  }
+  
+
+.carousel-item {
+  position: relative;
+  height: 100vh; /* Full screen height */
+}
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.carousel-caption h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+.carousel-caption .btn {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+.carousel-item::before {
+    
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay */
+}
+.about-section {
+    margin-top: 40px;
+    background-color: lightgray;
+    padding: 60px 0;
+  }
+  .about-tabs {
+    margin-bottom: 30px;
+  }
+  .about-tabs .nav-link {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .about-content {
+    margin-top: 20px;
+  }
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .service-box {
+    background-color: lightgrey;
+    padding: 30px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .service-box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  .service-box h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .service-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .service-box .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  .project{
+    background-color: lightgray;
+  }
+  .project-img {
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+
+  /* Hover effect to zoom image */
+  .project-img:hover {
+    transform: scale(1.1);
+  }
+
+  /* Overlay styles */
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Show overlay on hover */
+  .project-img:hover .project-overlay {
+    opacity: 1;
+  }
+
+  /* Text style for overlay */
+  .project-text {
+    text-align: center;
+  }
+
+  /* Create staggered image positioning */
+  .image-up {
+    margin-top: -20px;
+  }
+  .image-down {
+    margin-top: 20px;
+  }
+
+  /* Centering the text of tabs */
+  .tab-content .row {
+    margin-bottom: 30px;
+  }
+
+  /* Padding for the section */
+  .our-projects {
+    padding: 60px 0;
+  }
+
+  /* Section title styling */
+  .our-projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  /* Section Padding */
+  .contact-section {
+    padding: 60px 0;
+  }
+
+  /* Title Styling */
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+
+  /* Contact Form */
+  .contact-form{
+    background-color: lightgrey;
+  }
+  .contact-form input, .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  /* Submit Button */
+  .contact-form button {
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Map Section */
+  .map-section {
+    background-color: lightgrey;
+    border: #555;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .w{
+    margin-top: 10px;
+  }
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .contact-form, .map-section {
+      margin-top: 30px;
+    }
+  }
